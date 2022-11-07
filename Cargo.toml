@@ -2,7 +2,7 @@
 name = "rust_test_repo_dont_use_it_1337"
 version = "1.0.0"
 authors = ["Sora <djsora7771@gmail.com>"]
-categories = ["multimedia::audio", "science", "text-processing", "visualization"]
+categories = ["multimedia", "multimedia::audio", "science", "text-processing", "visualization"]
 description = "TODO"
 edition = "2021"
 homepage = "https://yandex.ru"
