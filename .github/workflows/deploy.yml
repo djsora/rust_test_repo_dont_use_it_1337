@@ -19,18 +19,13 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Rust toolchain
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
+        uses: dtolnay/rust-toolchain@stable
 
       - name: Rust Cache
         uses: Swatinem/rust-cache@v2
 
       - name: Build
-        uses: actions-rs/cargo@v1
-        with:
-          command: run
-          args: --release
+        run: cargo run --release
 
 #      - name: Minify
 #      - name: Deploy
