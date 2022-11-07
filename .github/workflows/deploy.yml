@@ -1,0 +1,33 @@
+name: example
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+#  schedule:
+#    - cron: '0 0 * * *'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Rust toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+
+      - name: Build
+        uses: actions-rs/cargo@v1
+        with:
+          command: run
+          args: --release
+
+#      - name: Minify
+#      - name: Deploy
