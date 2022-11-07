@@ -1,9 +1,14 @@
 [package]
 name = "rust_test_repo_dont_use_it_1337"
 version = "1.0.0"
+authors = ["Ivan Ivanov <ivanov@gmail.com>"]
+categories = ["multimedia::audio", "science", "text-processing", "visualization"]
+description = "TODO"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+homepage = "https://yandex.ru"
+keywords = ["todo1", "todo2"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/djsora/rust_test_repo_dont_use_it_133"
 
 [dependencies]
 anyhow = "1.0"
