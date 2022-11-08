@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Default Rust actions
-        uses: ./.github/workflows/rust_reusable.yml
+      - name: Prepare
+        uses: djsora/rust_test_repo_dont_use_it_1337/.github/workflows/prepare@main
 
       - name: Publish
         env:
