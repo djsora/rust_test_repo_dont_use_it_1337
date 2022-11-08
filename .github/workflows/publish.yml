@@ -9,8 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Default Rust actions
-        uses: ./.github/workflows/rust_reusable
+        uses: ./.github/workflows/rust_reusable.yml
 
       - name: Publish
         env:
