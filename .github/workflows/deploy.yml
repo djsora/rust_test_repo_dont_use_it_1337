@@ -16,6 +16,7 @@ jobs:
     uses: djsora/rust_test_repo_dont_use_it_1337/.github/workflows/rust_reusable.yml@main
 
   deploy:
+    runs-on: ubuntu-latest
     steps:
       - name: Build
         run: cargo run --release
