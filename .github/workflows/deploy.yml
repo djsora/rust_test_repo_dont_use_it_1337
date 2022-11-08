@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Prepare
-        uses: ./.github/workflows/prepare@main
+        uses: djsora/rust_test_repo_dont_use_it_1337/.github/workflows/prepare@main
 
       - name: Build
         run: cargo run --release
