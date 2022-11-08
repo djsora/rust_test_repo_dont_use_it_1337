@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Default Rust actions
-        uses: ./.github/workflows/rust_reusable.yml
+        uses: ./.github/workflows/rust_reusable
 
       - name: Publish
         env:

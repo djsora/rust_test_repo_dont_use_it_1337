@@ -16,7 +16,7 @@ jobs:
 
     steps:
       - name: Default Rust actions
-        uses: ./.github/workflows/rust_reusable.yml
+        uses: ./.github/workflows/rust_reusable
 
       - name: Build
         run: cargo run --release
