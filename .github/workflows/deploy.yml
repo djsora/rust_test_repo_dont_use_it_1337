@@ -15,8 +15,20 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Prepare
-        uses: djsora/rust_test_repo_dont_use_it_1337/.github/workflows/prepare@main
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Rust toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Rust Cache
+        uses: Swatinem/rust-cache@v2
+
+      - name: Check formatting
+        run: cargo fmt --all -- --check
+
+      - name: Clippy check
+        run: cargo clippy -- -D warnings
 
       - name: Build
         run: cargo run --release
