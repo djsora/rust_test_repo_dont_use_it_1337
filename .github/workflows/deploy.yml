@@ -12,7 +12,6 @@ on:
 
 jobs:
   prepare:
-    runs-on: ubuntu-latest
     uses: djsora/rust_test_repo_dont_use_it_1337/.github/workflows/rust_reusable.yml@main
 
   deploy:
