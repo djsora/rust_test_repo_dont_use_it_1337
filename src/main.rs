@@ -6,5 +6,5 @@ async fn main() {
         .await
         .expect("Should have been able to read the file");
     println!("{contents}");
-    println!("{}", contents.bytes().count());
+    println!("{}", contents.len());
 }
