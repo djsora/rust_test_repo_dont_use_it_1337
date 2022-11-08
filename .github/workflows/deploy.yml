@@ -11,13 +11,12 @@ on:
 #    - cron: '0 0 * * *'
 
 jobs:
-  deploy:
+  prepare:
     runs-on: ubuntu-latest
     uses: djsora/rust_test_repo_dont_use_it_1337/.github/workflows/rust_reusable.yml@main
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
 
+  deploy:
+    steps:
       - name: Build
         run: cargo run --release
 
