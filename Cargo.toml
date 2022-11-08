@@ -1,6 +1,6 @@
 [package]
 name = "rust_test_repo_dont_use_it_1337"
-version = "1.0.0"
+version = "1.0.1"
 authors = ["Sora <djsora7771@gmail.com>"]
 categories = ["multimedia", "multimedia::audio", "science", "text-processing", "visualization"]
 description = "TODO"
