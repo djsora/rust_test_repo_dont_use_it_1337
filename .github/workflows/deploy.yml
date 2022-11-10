@@ -34,7 +34,7 @@ jobs:
         run: cargo build --release
 
       - name: Run
-        if: github.repository_owner == 'lalala'
+        if: github.repository_owner == 'djsora'
         run: cargo run --release
 
 #      - name: Minify
